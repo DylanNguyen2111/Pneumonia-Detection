@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/dylannguyen/Pneumonia-Detection/mlruns/0/7dbdb860e5d94bf386e79f239f74cfab/artifacts
+end_time: 1710849018023
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 7dbdb860e5d94bf386e79f239f74cfab
+run_name: adventurous-fox-765
+run_uuid: 7dbdb860e5d94bf386e79f239f74cfab
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1710849013751
+status: 3
+tags: []
+user_id: dylannguyen

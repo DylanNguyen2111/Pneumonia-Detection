@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/dylannguyen/Pneumonia-Detection/mlruns/0/da4f5c059291429faac9e97e420cd963/artifacts
+end_time: 1710840188634
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: da4f5c059291429faac9e97e420cd963
+run_name: illustrious-worm-441
+run_uuid: da4f5c059291429faac9e97e420cd963
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1710840187818
+status: 4
+tags: []
+user_id: dylannguyen
