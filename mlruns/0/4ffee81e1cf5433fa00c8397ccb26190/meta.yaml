@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/dylannguyen/Pneumonia-Detection/mlruns/0/4ffee81e1cf5433fa00c8397ccb26190/artifacts
+end_time: 1710899039363
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 4ffee81e1cf5433fa00c8397ccb26190
+run_name: persistent-cub-718
+run_uuid: 4ffee81e1cf5433fa00c8397ccb26190
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1710899032456
+status: 3
+tags: []
+user_id: dylannguyen

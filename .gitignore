@@ -161,3 +161,5 @@ cython_debug/
 
 # Ignore everthing in artifact folder since no need to upload data to github
 artifacts/*
+validation_data/*
+test_data/*
