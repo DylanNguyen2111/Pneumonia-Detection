@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/dylannguyen/Pneumonia-Detection/mlruns/0/e32c67eca04a4b95b4b4e95b9a52a16f/artifacts
+end_time: 1710937105769
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: e32c67eca04a4b95b4b4e95b9a52a16f
+run_name: clean-stork-507
+run_uuid: e32c67eca04a4b95b4b4e95b9a52a16f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1710937101345
+status: 3
+tags: []
+user_id: dylannguyen

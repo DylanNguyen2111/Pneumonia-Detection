@@ -4,6 +4,7 @@ from zipfile import ZipFile
 import tensorflow as tf
 from pathlib import Path
 from cnnClassifier.entity.config_entity import PrepareBaseModelConfig
+import tensorflow
                                                 
 
 
@@ -26,7 +27,7 @@ class PrepareBaseModel:
 
     
     @staticmethod
-    def _prepare_full_model(model, classes, freeze_all, freeze_till, learning_rate):
+    def _prepare_full_model(model, classes, freeze_all, freeze_till, learning_rate, dropout, regularizer):
         if freeze_all:
             for layer in model.layers:
                 model.trainable = False
@@ -35,10 +36,12 @@ class PrepareBaseModel:
                 model.trainable = False
 
         flatten_in = tf.keras.layers.Flatten()(model.output)
+        dropout = tf.keras.layers.Dropout(dropout)(flatten_in)
         prediction = tf.keras.layers.Dense(
             units=classes,
-            activation="softmax"
-        )(flatten_in)
+            activation="softmax",
+            kernel_regularizer=tensorflow.keras.regularizers.l2(regularizer)
+        )(dropout)
 
         full_model = tf.keras.models.Model(
             inputs=model.input,
@@ -61,7 +64,10 @@ class PrepareBaseModel:
             classes=self.config.params_classes,
             freeze_all=True,
             freeze_till=None,
-            learning_rate=self.config.params_learning_rate
+            learning_rate=self.config.params_learning_rate,
+            dropout=self.config.params_dropout,
+            regularizer=self.config.params_regularizer
+            
         )
 
         self.save_model(path=self.config.updated_base_model_path, model=self.full_model)
